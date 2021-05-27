@@ -1,1 +1,1 @@
-# demo-project
+# demo-project for Jenkins pipeline
