@@ -8,9 +8,11 @@ pipeline {
       }
     }
     stage("test"){
-      steps{ 
+      when {
+        expression {
+          params.executeTests
+        }
         echo "it is test stage..." 
-      }
     }
     stage("deploy"){
       steps{ 
