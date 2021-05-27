@@ -12,7 +12,7 @@ pipeline {
         expression {
           params.executeTests
         }
-        echo "it is test stage..." 
+      }
     }
     stage("deploy"){
       steps{ 
